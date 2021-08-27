@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Текст перед"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.example.simplegameengineforandroid.PlayingField
+        android:id="@+id/playing_field_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textId"
+        android:layout_above="@id/button_Up"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/button_Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вверх"
+        android:layout_above="@id/button_Left"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Влево"
+        android:layout_above="@id/button_Down"
+        android:layout_alignParentLeft="true"
+        />
+    <Button
+        android:id="@+id/button_Rite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вправо"
+        android:layout_above="@id/button_Down"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:id="@+id/button_Down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вниз"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
