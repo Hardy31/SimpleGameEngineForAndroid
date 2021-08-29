@@ -171,8 +171,6 @@ public class PlayingField extends View {
         matrix.setTranslate((x*sellSize)+corX, (y*sellSize)+corX);
         k = bitmapX.getWidth();
         System.out.println("------------K-----------" + k);
-//                    System.out.println(" ==== KKKKKh ====" + k );
-//                    System.out.println(" ==== sellSize ====" + sellSize );
 
         matrix.preScale( 1f,  1f);
     }
