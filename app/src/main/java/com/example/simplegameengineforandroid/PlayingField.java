@@ -15,8 +15,8 @@ import androidx.annotation.Nullable;
 public class PlayingField extends View {
 
     //количество ячеек
-    static int sellsHoriz = 5;
-    static int sellsVerti = 5;
+    static int sellsHoriz = 8;
+    static int sellsVerti = 8;
     static Cell[][] playingField = new Cell[sellsHoriz][sellsVerti];
     static int k;
     {
@@ -172,6 +172,6 @@ public class PlayingField extends View {
         k = bitmapX.getWidth();
         System.out.println("------------K-----------" + k);
 
-        matrix.preScale( 1f,  1f);
+        matrix.preScale( (float)sellSize/k,  (float)sellSize/k);
     }
 }
